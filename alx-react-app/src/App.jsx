@@ -1,20 +1,18 @@
-import React from 'react';
 import './App.css'
-import WelcomeMessage from './components/WelcomeMessage'
+// import WelcomeMessage from './components/WelcomeMessage'
+import React from 'react';
 import Header from './Header';
 import MainContent from './MainContent';
 import Footer from './Footer';
 
-function App() {
+const App = () => {
+    return (
+        <div>
+            <Header />
+            <MainContent />
+            <Footer />
+        </div>
+    );
+};
 
-  return (
-    <>
-      <WelcomeMessage />
-      <Header />
-      <MainContent />
-      <Footer />
-    </>
-  )
-}
-
-export default App
+export default App;
